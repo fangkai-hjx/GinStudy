@@ -1,0 +1,19 @@
+Database:
+  DBType: mysql
+  UserName: root
+  Password: root
+  Host: 127.0.0.1:3306
+  DBName: db1
+  Charset: utf8
+  ParseTime: True
+  MaxIdleConns: 10
+  MaxOpenConns: 30
+Server:
+  RunMode: debug
+  HttpHost: 127.0.0.1
+  HttpPort: 8080
+  ReadTimeout: 60
+  WriteTimeout: 60
+Redis:
+  Addr: 127.0.0.1:6379
+  Password:
