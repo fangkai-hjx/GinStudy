@@ -12,7 +12,8 @@ var (
 
 //初始化MySQL连接池
 func SetupDB() error {
-	DB, err := gorm.Open(DatabaseSetting.DBType,
+	var err error
+	DB, err = gorm.Open(DatabaseSetting.DBType,
 		fmt.Sprintf("%s:%s@tcp(%s)/%s?charset=%s&parseTime=%t&loc=Local",
 			DatabaseSetting.UserName,
 			DatabaseSetting.PassWord,

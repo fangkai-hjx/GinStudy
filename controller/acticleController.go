@@ -15,7 +15,7 @@ func NewArticleController() *ArticleController {
 	return &ArticleController{}
 }
 
-// 得到一篇文章的详情
+
 func (a *ArticleController) GetOne(c *gin.Context) {
 	result := result.NewResult(c)
 	param := request.ArticleRequest{ID: validCheck.StrTo(c.Param("id")).MustUInt64()}

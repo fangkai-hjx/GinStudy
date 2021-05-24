@@ -20,7 +20,7 @@ func GetOneArticle(articleId uint64) (*model.Article, error) {
 			fmt.Println("dao.SelectOneArticle", err)
 			return nil, err
 		} else {
-			err := cache.SetOneArticleCache(articleId, article)
+			err := cache.SetOneArticleCache(articleId, oneArticle)
 			if err != nil {
 				fmt.Println("cache.SetOneArticleCache", err)
 				return nil, err

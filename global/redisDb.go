@@ -23,6 +23,6 @@ func SetupRedisDb() error {
 		fmt.Println("RedisDb.ping err：", err)
 		return err
 	}
-	fmt.Println("MySQL pool init success")
+	fmt.Println("Redis pool init success")
 	return nil
 }

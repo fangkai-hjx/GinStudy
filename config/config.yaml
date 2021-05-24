@@ -15,5 +15,5 @@ Server:
   ReadTimeout: 60
   WriteTimeout: 60
 Redis:
-  Addr: 127.0.0.1:6379
+  Addr: 222.201.187.166:6379
   Password:
